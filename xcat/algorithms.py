@@ -20,6 +20,7 @@ async def count(context: AttackContext, expression, count_func=func.count):
             return int(result)
 
     return await binary_search(context, count_func(expression), min=0)
+print("hello")
 
 
 
