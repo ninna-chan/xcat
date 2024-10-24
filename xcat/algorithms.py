@@ -22,6 +22,7 @@ async def count(context: AttackContext, expression, count_func=func.count):
     return await binary_search(context, count_func(expression), min=0)
 
 
+
 async def get_char(context: AttackContext, expression):
     if context.features['codepoint-search']:
         return await codepoint_search(context, expression)
